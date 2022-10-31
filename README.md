@@ -1,2 +1,2 @@
-# myproject
-This is rep test
+# Slider imgs app
+
