@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.silder-container {
+    margin: 10px auto;
+    width: 800px;
+    height: 300px ;
+    position: relative;
+}
+
+.silder-container img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition:  opacity 1s;
+    width: 800px;
+    height: 300px;
+}
+
+.silder-container img.active {
+    opacity: 1;
+}
+
+
+.silder-container .silder-number {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(62, 247, 136);
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.contorl-container{
+    width: 800px;
+    margin: auto;
+}
+
+.contorl-container .prev ,
+.contorl-container .next{
+    background-color: rgb(51, 182, 138);
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    user-select: none;
+    width: 20%;
+}
+
+.contorl-container .prev{
+    float: left;
+}
+.contorl-container .next{
+    float: right;
+}
+
+.contorl-container  .disabled,
+.contorl-container  .disabled{
+    cursor: no-drop;
+    background-color: rgba(51, 182, 138, 0.5);
+}
+
+.contorl-container .indicators {
+    width: 60%;
+    float: left;
+}
+.contorl-container .indicators ul{
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+
+}
+.contorl-container .indicators ul li{
+    height: 28px;
+    width: 28px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgb(226, 217, 217);
+    color: black;
+    line-height: 28px;
+    cursor: pointer;
+    margin: 0 2px;
+    border-radius: 4px;
+
+}
+
+.contorl-container .indicators ul li.active {
+    background-color: rgb(98, 98, 210);
+    color: beige;
+}
+
+
+
+
+
+
+
+
